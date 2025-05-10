@@ -40,6 +40,7 @@
     main {
       flex: 1;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       padding: 40px 20px;
@@ -55,12 +56,36 @@
       text-decoration: none;
       transition: all 0.3s ease;
       box-shadow: 0 0 15px #00ff99;
+      margin-bottom: 40px;
     }
 
     .download-button:hover {
       background-color: #00ff99;
       color: #0a0a0a;
       box-shadow: 0 0 25px #00ff99;
+    }
+
+    .instructions {
+      max-width: 500px;
+      background-color: #111;
+      border: 1px solid #00ff99;
+      border-radius: 10px;
+      padding: 20px 30px;
+      box-shadow: 0 0 10px #00ff99;
+      color: #ccffcc;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .instructions h3 {
+      margin-bottom: 15px;
+      color: #00ff99;
+      font-size: 20px;
+    }
+
+    .instructions ol {
+      list-style-type: decimal;
+      padding-left: 20px;
     }
 
     footer {
@@ -81,6 +106,15 @@
 
   <main>
     <a class="download-button" href="file.zip" download>⬇ Скачать NursultanClient.zip</a>
+
+    <div class="instructions">
+      <h3>Инструкция по установке:</h3>
+      <ol>
+        <li>Скачать архив и распаковать его на рабочий стол.</li>
+        <li>Если антивирус жалуется — временно отключить его.</li>
+        <li>Запустить <b>от имени администратора</b>.</li>
+      </ol>
+    </div>
   </main>
 
   <footer>
