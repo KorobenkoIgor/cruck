@@ -2,10 +2,89 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Скачать файл</title>
+  <title>Nursultan Client</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0a0a0a;
+      color: #00ff99;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      text-shadow: 0 0 15px #00ff99;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-size: 20px;
+      color: #bbbbbb;
+      font-weight: normal;
+      margin-top: 0;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .download-button {
+      font-size: 24px;
+      color: #00ff99;
+      background-color: #111;
+      padding: 20px 50px;
+      border: 2px solid #00ff99;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px #00ff99;
+    }
+
+    .download-button:hover {
+      background-color: #00ff99;
+      color: #0a0a0a;
+      box-shadow: 0 0 25px #00ff99;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #555;
+      background-color: #0d0d0d;
+      border-top: 1px solid #222;
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif; text-align: center; margin-top: 50px;">
-  <h1>Скачать файл</h1>
-  <a href="file.zip" download style="font-size: 20px;">⬇ Скачать file.zip</a>
+<body>
+  <header>
+    <h1>💻 Nursultan Client</h1>
+    <h2>Приватный чит-клиент для избранных</h2>
+  </header>
+
+  <main>
+    <a class="download-button" href="file.zip" download>⬇ Скачать NursultanClient.zip</a>
+  </main>
+
+  <footer>
+    © 2025 Nursultan Soft. Все права защищены.
+  </footer>
 </body>
 </html>
